@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edge TTS Discord Bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header id="hero">
+    <div class="overlay">
+        <h1>Edge TTS Discord Bot</h1>
+        <p class="subtitle">自然な音声で読み上げる、スマートなDiscord体験を。</p>
+        <div class="button-group">
+        <a href="https://discord.com/oauth2/authorize?client_id=1364493244343255111&permissions=2150976512&integration_type=0&scope=bot+applications.commands" class="btn">1号ボットを導入</a>
+        <a href="https://discord.com/oauth2/authorize?client_id=1190977901856825344&permissions=2150976512&integration_type=0&scope=bot+applications.commands" class="btn">2号ボットを導入</a>
+        <a href="https://discord.gg/5z2uedDtXn" class="btn secondary">サポートサーバー</a>
+        </div>
+    </div>
+    </header>
+
+<section class="footer">
+  <a href="https://x.com/yakiisi2gou" class="btn contact-btn">問い合わせ先 | X</a>
+</section>
+
+
+
+  <main>
+    <section class="features">
+      <h2>特徴</h2>
+      <ul>
+        <li>Microsoft EdgeのTTSエンジン使用</li>
+        <li>日本語・英語など多言語対応</li>
+        <li>シンプルなスラッシュコマンド</li>
+        <li>テキストチャンネルのメッセージを音声に</li>
+      </ul>
+    </section>
+
+    <section class="commands">
+    <h2>コマンド一覧</h2>
+    <p>利用可能なコマンドの一覧です。</p>
+    <table>
+        <thead>
+        <tr><th>コマンド</th><th>説明</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>/join [チャンネル名]</td>
+            <td>Botをボイスチャンネルに参加させます。チャンネル名を指定しない場合、コマンド実行者のVCに参加します。</td>
+        </tr>
+        <tr>
+            <td>/leave</td>
+            <td>Botをボイスチャンネルから退出させます。</td>
+        </tr>
+        <tr>
+            <td>/set_reading_channel [チャンネル名]</td>
+            <td>メッセージを読み上げるテキストチャンネルを設定します。チャンネル名を指定しない場合、コマンド実行チャンネルが設定されます。</td>
+        </tr>
+        <tr>
+            <td>/add_word &lt;元の語句&gt; &lt;読み&gt;</td>
+            <td>サーバー専用辞書に単語を追加します。（例: /add_word hello こんにちは）</td>
+        </tr>
+        <tr>
+            <td>/remove_word &lt;元の語句&gt;</td>
+            <td>サーバー専用辞書から単語を削除します。</td>
+        </tr>
+        <tr>
+            <td>/list_words</td>
+            <td>サーバー専用辞書に登録されている単語一覧を表示します。</td>
+        </tr>
+        <tr>
+            <td>/help</td>
+            <td>このヘルプメッセージを表示します。</td>
+        </tr>
+        <tr>
+            <td>/status</td>
+            <td>Botの動作状況を表示します。</td>
+        </tr>
+        <tr>
+            <td>/invite</td>
+            <td>Botの招待リンクを表示します。</td>
+        </tr>
+        </tbody>
+    </table>
+    </section>
+    
+    <section class="opensource">
+    <h2>オープンソースプロジェクト</h2>
+    <p>
+        このBotはオープンソースで開発されており、<strong>自身のPCで動作させることも可能</strong>です。<br>
+        ボットの動作方法はについては、以下のGitHubページからご覧ください。
+    </p>
+    <a href="https://github.com/Yakiisi/edge_tts-discord-bot" class="btn github-btn" target="_blank">GitHubで見る</a>
+    </section>
+
+
+    <section class="footer">
+      <p>&copy; 2025 Edge TTS Bot Project | Created by 石</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

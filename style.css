@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+#hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./back.png') no-repeat center center/cover;
+  filter: blur(8px) brightness(0.6);
+  z-index: 0;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5); /* 背景暗めの半透明 */
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+}
+
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6); /* 暗くして文字を読みやすく */
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #007bff;
+}
+
+.btn.secondary {
+  background-color: #444;
+}
+
+.btn.secondary:hover {
+  background-color: #666;
+}
+
+main {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.features h2,
+.commands h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+
+.features ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features li {
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  background-color: #222;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.footer a.x-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1da1f2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a.x-link:hover {
+  text-decoration: underline;
+}
+
+.footer .contact-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #1da1f2;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.footer .contact-btn:hover {
+  background-color: #0d8ddb;
+}
+
+.opensource {
+  margin-top: 60px;
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid #333;
+}
+
+.opensource h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.opensource p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.github-btn {
+  background-color: #24292e;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.github-btn:hover {
+  background-color: #444c56;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .features ul {
+    padding-left: 10px;
+  }
+
+  .opensource h2 {
+    font-size: 1.5rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .overlay {
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  main {
+    padding: 40px 10px;
+  }
+
+  .footer {
+    padding: 30px 10px;
+    font-size: 0.85rem;
+  }
+}
